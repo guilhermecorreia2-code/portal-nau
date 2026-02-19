@@ -43,7 +43,6 @@
     .suggestion-item { padding: 12px 20px; cursor: pointer; display: flex; align-items: center; gap: 10px; color: #475569; border-bottom: 1px solid #f1f5f9; text-align: left; }
     .suggestion-item:hover { background: #f8fafc; color: #0066ff; }
 
-    /* Esconder elementos de terceiros */
     body > :not(header):not(main):not(footer):not(script):not(style) {
       display: none !important;
     }
@@ -78,19 +77,73 @@
     <section class="w-full max-w-4xl mx-auto mb-12">
         <h2 class="text-xl font-bold text-gray-800 mb-6 text-center">Perguntas Frequentes</h2>
         <div class="space-y-3">
+            
             <div class="faq-item bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
                 <button onclick="toggleFaq(this)" class="w-full p-4 text-left flex justify-between items-center group">
-                    <span class="font-bold text-gray-700 text-sm md:text-base group-hover:text-blue-600">Como alterar o nome no certificado?</span>
+                    <span class="font-bold text-gray-700 text-sm md:text-base group-hover:text-blue-600">Erro na Chave Móvel Digital (CMD)?</span>
                     <svg class="chevron w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </button>
                 <div class="faq-answer">
                     <div class="px-6 pb-4 text-gray-600 text-sm">
-                        Deve atualizar o seu nome nas definições de perfil. Se o certificado já foi gerado, poderá ter de clicar em "Atualizar" na página do curso.
-                        <br><a href="https://plataforma-nau.atlassian.net/wiki/search?text=nome%20certificado" target="_blank" class="faq-link">Consultar guia de perfil →</a>
+                        Garanta que a sua CMD está ativa e válida. Erros de redirecionamento costumam resolver-se ao limpar a cache do navegador ou usar uma janela anónima.
+                        <br><a href="https://plataforma-nau.atlassian.net/wiki/search?text=erro%20CMD" target="_blank" class="faq-link">Ver solução na Wiki →</a>
                     </div>
                 </div>
             </div>
+
+            <div class="faq-item bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+                <button onclick="toggleFaq(this)" class="w-full p-4 text-left flex justify-between items-center group">
+                    <span class="font-bold text-gray-700 text-sm md:text-base group-hover:text-blue-600">Problemas com a palavra-passe?</span>
+                    <svg class="chevron w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="px-6 pb-4 text-gray-600 text-sm">
+                        Pode redefinir a sua senha através do e-mail de recuperação. Se não receber o link, verifique a pasta de SPAM ou se o e-mail inserido está correto.
+                        <br><a href="https://plataforma-nau.atlassian.net/wiki/search?text=palavra-passe" target="_blank" class="faq-link">Consultar guia de acesso →</a>
+                    </div>
+                </div>
             </div>
+
+            <div class="faq-item bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+                <button onclick="toggleFaq(this)" class="w-full p-4 text-left flex justify-between items-center group">
+                    <span class="font-bold text-gray-700 text-sm md:text-base group-hover:text-blue-600">Tenho mais do que uma conta (duplicação)?</span>
+                    <svg class="chevron w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="px-6 pb-4 text-gray-600 text-sm">
+                        A duplicação de contas pode causar perda de progresso. Caso tenha criado duas contas, deverá solicitar a fusão das mesmas para manter os seus certificados num único perfil.
+                        <br><a href="https://plataforma-nau.atlassian.net/wiki/search?text=mais%20que%20uma%20conta" target="_blank" class="faq-link">Saber como proceder →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+                <button onclick="toggleFaq(this)" class="w-full p-4 text-left flex justify-between items-center group">
+                    <span class="font-bold text-gray-700 text-sm md:text-base group-hover:text-blue-600">Problema na emissão ou erro no certificado?</span>
+                    <svg class="chevron w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="px-6 pb-4 text-gray-600 text-sm">
+                        Verifique se o seu nome está correto no perfil antes de emitir. Se o certificado aparecer em branco ou com erro, tente atualizar a página do curso.
+                        <br><a href="https://plataforma-nau.atlassian.net/wiki/search?text=problemas%20certificados" target="_blank" class="faq-link">Resolver erro de certificado →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+                <button onclick="toggleFaq(this)" class="w-full p-4 text-left flex justify-between items-center group">
+                    <span class="font-bold text-gray-700 text-sm md:text-base group-hover:text-blue-600">Não consegue concluir o curso com sucesso?</span>
+                    <svg class="chevron w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="px-6 pb-4 text-gray-600 text-sm">
+                        Certifique-se de que visualizou todos os vídeos e obteve a nota mínima nos exames. Consulte o separador "Progresso" para identificar o que falta concluir.
+                        <br><a href="https://plataforma-nau.atlassian.net/wiki/search?text=concluir%20curso" target="_blank" class="faq-link">Ver requisitos de conclusão →</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <div class="w-full max-w-4xl mx-auto mb-8">
@@ -160,9 +213,7 @@
       { title: "Como obter Certificados", url: "https://plataforma-nau.atlassian.net/wiki/search?text=certificados", icon: "📜" },
       { title: "Problemas de Acesso / Login", url: "https://plataforma-nau.atlassian.net/wiki/search?text=acesso", icon: "🔑" },
       { title: "Wiki Técnica Completa", url: "https://plataforma-nau.atlassian.net/wiki/spaces/PROD/overview", icon: "📖" },
-      { title: "Autenticação.gov / CMD", url: "https://plataforma-nau.atlassian.net/wiki/search?text=autenticação", icon: "🔐" },
-      { title: "Microcredenciais", url: "https://plataforma-nau.atlassian.net/wiki/search?text=microcredenciais", icon: "🎓" },
-      { title: "Privacidade e RGPD", url: "https://plataforma-nau.atlassian.net/wiki/search?text=privacidade", icon: "🛡️" }
+      { title: "Autenticação.gov / CMD", url: "https://plataforma-nau.atlassian.net/wiki/search?text=autenticação", icon: "🔐" }
     ];
 
     function handleInput(value) {
